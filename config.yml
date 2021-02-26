@@ -27,19 +27,29 @@ engine:                      # engine settings
   uci_options:               # arbitrary UCI options passed to the engine
 
 option name Contempt type spin : 24
-option name Analysis Contempt type combo : Both var Off var White var Black var Both
-option name Threads type spin : 8
-option name Hash type spin : 512
+option name Protocol type combo : uci var uci var usi var ucci var xboard
+option name Contempt type spin : 100
+option name Analysis Contempt type combo : Both var Both var Off var White var Black
+option name Threads type spin : 4
+option name Hash type spin : 256
 option name Ponder type check : false
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
 option name Move Overhead type spin : 5000
 option name Slow Mover type spin : 10
 option name nodestime type spin : 0
+option name UCI_Chess960 type check : false
+option name UCI_Variant type combo : chess var 3check var 5check var ai-wok var almost var amazon var antichess var armageddon var asean var ataxx var breakthrough var bughouse var cambodian var capablanca var capahouse var caparandom var centaur var chancellor var chess var chessgi var chigorin var clobber var clobber10 var codrus var courier var crazyhouse var dobutsu var embassy var euroshogi var extinction var fairy var fischerandom var gardner var giveaway var gorogoro var gothic var grand var hoppelpoppel var horde var janggi var janggicasual var janggimodern var janggitraditional var janus var jesonmor var judkins var karouk var kinglet var kingofthehill var knightmate var koedem var kyotoshogi var loop var losalamos var losers var makpong var makruk var manchu var micro var mini var minishogi var minixiangqi var modern var newzealand var nocastle var normal var placement var pocketknight var racingkings var seirawan var shako var shatar var shatranj var shogi var shouse var sittuyin var suicide var supply var threekings var xiangqi
 option name UCI_AnalyseMode type check : false
 option name UCI_LimitStrength type check : false
-option name UCI_Elo type spin : 1350
+option name UCI_Elo type spin : 2850
 option name UCI_ShowWDL type check : false
+option name SyzygyPath type string : <empty>
+option name SyzygyProbeDepth type spin : 100
+option name Syzygy50MoveRule type check : true
+option name SyzygyProbeLimit type spin : 7
+option name TsumeMode type check : false
+option name VariantPath type string : <empty>
 
 #   go_commands:             # additional options to pass to the UCI go command
 #     nodes: 1               # Search so many nodes only.
