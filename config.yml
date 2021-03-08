@@ -11,7 +11,7 @@ engine:                      # engine settings
   polyglot:
     enabled: false           # activate polyglot book
     book:
-      standard: "engines/book.bin" # book file path of standard chess
+#     standard: "engines/book.bin" # book file path of standard chess
 #      atomic: "atomic book path"
 #      giveaway: "antichess book path"
 #      crazyhouse: "crazyhouse book path"
@@ -26,8 +26,8 @@ engine:                      # engine settings
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
 
-option name Threads type spin : 1
-option name Hash type spin : 16
+option name Threads type spin : 8
+option name Hash type spin : 512
 option name Ponder type check : false
 
 #   go_commands:             # additional options to pass to the UCI go command
