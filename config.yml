@@ -29,6 +29,9 @@ engine:                      # engine settings
 option name Threads type spin : 8
 option name Hash type spin : 512
 option name Ponder type check : false
+Move Overhead : 5000
+Skill Level : -20
+Slow Mover : 10
 
 #   go_commands:             # additional options to pass to the UCI go command
 #     nodes: 1               # Search so many nodes only.
